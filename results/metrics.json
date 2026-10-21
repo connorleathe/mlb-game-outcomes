@@ -1,0 +1,44 @@
+{
+  "games_modeled": 12146,
+  "train_rows": 9715,
+  "test_rows": 2431,
+  "test_seasons": [
+    2013
+  ],
+  "q1": {
+    "pct_one_run": 0.295,
+    "pct_two_plus": 0.705,
+    "margin_r2": 0.005
+  },
+  "classification": {
+    "dummy": {
+      "acc": 0.538
+    },
+    "market_favorite": {
+      "acc": 0.565,
+      "logloss": 0.676,
+      "brier": 0.241
+    },
+    "random_forest": {
+      "acc": 0.558,
+      "logloss": 0.692,
+      "brier": 0.249
+    }
+  },
+  "margin_regression": {
+    "mae": 2.06,
+    "r2": -0.06
+  },
+  "top_outcome_features": [
+    "home_prob",
+    "away_prob",
+    "away_last3_off",
+    "home_last3_def",
+    "home_last3_off"
+  ],
+  "leave_one_season_out": {
+    "market_wins_acc": 5,
+    "market_wins_logloss": 5,
+    "seasons": 5
+  }
+}
